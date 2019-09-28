@@ -1,0 +1,63 @@
+{
+    "users": [{
+            "id": "LithHarbor",
+            "awardedbadges": {
+                "RoyalFlush": true,
+                "BecameEliteFour": true,
+                "GotMarried": true
+            },
+            "earnedbadges": {
+                "GodlyDagger": true
+            }
+        },
+        {
+            "id": "MonolithicTV",
+            "awardedbadges": {
+                "GodlyDagger": true,
+                "RoyalFlush": true,
+                "BeatEliteFour": true,
+                "BeatMario": true,
+                "FirstZakumClear": true
+            }
+        },
+        {
+            "id": "XZeta",
+            "awardedbadges": {
+                "FirstZakumClear": true
+            }
+        },
+        {
+            "id": "Plutonium",
+            "awardedbadges": {
+                "BeatEliteFour": true,
+                "FirstZakumClear": true
+            }
+        }
+    ],
+    "badges": [{
+            "id": "Level200",
+            "img": "zakum",
+            "eventdate": "2018-07-23"
+        },
+        {
+            "id": "RoyalFlush",
+            "img": "playingcards",
+            "eventdate": "2018-03-02"
+        },
+        {
+            "id": "GodlyDagger",
+            "img": "dagger",
+            "eventdate": "2018-03-22"
+        },
+        {
+            "id": "BeatMario",
+            "img": "mushroom",
+            "eventdate": "2018-03-28"
+        },
+        {
+            "id": "BeatEliteFour",
+            "img": "pokeball",
+            "eventdate": "2018-01-03"
+        }
+    ]
+}

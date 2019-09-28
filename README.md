@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Database 
+1. Install [JSON-server](https://www.npmjs.com/package/json-server)
+2. User the `db.json` file inside `db` 
+
+Users have `awardedbadges` and `earnedbadges`. 
+
+The badges that are `earned` were through watching clips - and will be treated differently on the front-end compared to the ones that were `awarded` by being a part of the stream. 
+
+The `badges` object indicates the name of the image file ending in `.png`. For badges that the user doesn't have yet, they should be in greyscale with CSS.
 
 ## Available Scripts
 
