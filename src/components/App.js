@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { fetchBadges } from "../modules/badges";
 
 import { Typography } from "@material-ui/core";
 
@@ -41,6 +42,7 @@ class App extends Component {
     if (this.twitch) {
       this.twitch.onAuthorized(auth => {
         this.props.authenticateUser(auth.token, auth.userId);
+        this.props.fetchBadges();
       });
 
       this.twitch.onVisibilityChanged((isVisible, _c) => {
@@ -95,10 +97,11 @@ class App extends Component {
 }
 
 const mapStateToProps = state => ({
-  app: state.app
+  app: state.app,
+  badges: state.badges
 });
 
 export default connect(
   mapStateToProps,
-  { authenticateUser }
+  { authenticateUser, fetchBadges }
 )(App);
