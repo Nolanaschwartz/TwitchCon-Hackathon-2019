@@ -37,13 +37,11 @@ function BadgeStatus(props) {
 
       <Card className={useStyles.card}>
       <CardHeader
-      
         title= {props.badge.active ? "Active Badge" : "Earning Badge"}
-      
       />
 
         <CardContent>
-        
+
           <center>
             <BadgeIcon badge={props.badge} />
             <p>{props.badge.name}</p>

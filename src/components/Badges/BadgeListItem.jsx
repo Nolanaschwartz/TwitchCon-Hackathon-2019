@@ -11,6 +11,7 @@ function BadgeListItem(props) {
           avatar={<BadgeIcon badge={props.badge} />}
           title={props.badge.fullName}
           subheader={props.badge.eventDate}
+          onClick={() => props.handleBadgeClick(props.badge)}
         />
       </Card>
     </div>

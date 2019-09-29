@@ -8,6 +8,7 @@ const FETCH_BADGES_ERROR = "badges/fetch/error";
 const CHANGING_ACTIVE_BADGE = "badges/change/active";
 const CHANGED_ACTIVE_BADGE = "badges/changed/active";
 const CHANGING_ACTIVE_BADGE_ERROR = "badges/change/active/error";
+const SELECT_BADGE = "badges/select";
 
 // initial state
 
@@ -17,7 +18,8 @@ const INITIAL_STATE = {
   changingActive: false,
   activeBadge: null,
   fetchError: false,
-  changeError: false
+  changeError: false,
+  selectedBadge: null
 };
 
 // reducer
@@ -35,7 +37,17 @@ export default function reducer(state = INITIAL_STATE, action) {
         }
         return null;
       });
-      return { ...state, fetching: false, badges: action.payload, activeBadge };
+      let selectedBadge = state.selectedBadge;
+      if (!selectedBadge) {
+        selectedBadge = activeBadge;
+      }
+      return {
+        ...state,
+        fetching: false,
+        badges: action.payload,
+        activeBadge,
+        selectedBadge
+      };
     case FETCH_BADGES_ERROR:
       return { ...state, fetching: false, fetchError: true };
     case CHANGING_ACTIVE_BADGE:
@@ -44,6 +56,8 @@ export default function reducer(state = INITIAL_STATE, action) {
       return { ...state, changingActive: false };
     case CHANGING_ACTIVE_BADGE_ERROR:
       return { ...state, changingActive: false, changeError: true };
+    case SELECT_BADGE:
+      return { ...state, selectedBadge: action.payload };
     default:
       return state;
   }
@@ -73,5 +87,12 @@ export function changeActiveBadge(userId, badgeId) {
     } catch {
       dispatch({ type: CHANGING_ACTIVE_BADGE_ERROR });
     }
+  };
+}
+
+export function selectBadge(badge) {
+  return {
+    type: SELECT_BADGE,
+    payload: badge
   };
 }

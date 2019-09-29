@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchBadges } from "../modules/badges";
+import { fetchBadges, selectBadge } from "../modules/badges";
 
 import { Typography } from "@material-ui/core";
 
@@ -18,7 +18,8 @@ class App extends Component {
     this.state = {
       finishedLoading: false,
       theme: "light",
-      isVisible: true
+      isVisible: true,
+      selectedBadge: null
     };
   }
 
@@ -63,6 +64,10 @@ class App extends Component {
     }
   }
 
+  handleBadgeClick = badge => {
+    this.props.selectBadge(badge);
+  };
+
   // TODO: Prolly replace this with BadgeList component
   renderBadgeList() {
     const { badges } = this.props.badges;
@@ -73,7 +78,13 @@ class App extends Component {
       return (
         <ul style={overrideUlStyle}>
           {badges.map((item, key) => {
-            return <BadgeListItem key={key} badge={item} />;
+            return (
+              <BadgeListItem
+                key={key}
+                badge={item}
+                handleBadgeClick={this.handleBadgeClick}
+              />
+            );
           })}
         </ul>
       );
@@ -81,17 +92,11 @@ class App extends Component {
   }
 
   renderCurrentBadge() {
-    const { badges } = this.props.badges;
-    if (badges) {
-      const foundActiveBadge = badges.find(badge => {
-        console.log(badge);
-        return badge.active === true;
-      });
-      if (foundActiveBadge) {
-        return <BadgeStatus badge={foundActiveBadge} />;
-      }
+    const { selectedBadge } = this.props.badges;
+    if (selectedBadge) {
+      return <BadgeStatus badge={selectedBadge} />;
     }
-    return null;
+    return <p>No Badge Selected</p>;
   }
 
   render() {
@@ -118,5 +123,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { authenticateUser, fetchBadges }
+  { authenticateUser, fetchBadges, selectBadge }
 )(App);
