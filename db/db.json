@@ -1,77 +1,219 @@
 {
     "users": [{
             "id": "LithHarbor",
-            "activebadge": "BeatEliteFour",
-            "awardedbadges": {
-                "RoyalFlush": true,
-                "BeatEliteFour": true,
-                "GodlyDagger": true
-            },
-            "earnedbadges": {
-                "GodlyDagger": true
-            }
+            "badges": [{
+                    "id": "FirstZakumClear",
+                    "img": "zakum",
+                    "awarded": false,
+                    "active": true,
+                    "eventdate": "2018-07-23",
+                    "fullname": "First Zakum Clear",
+                    "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+                    "clipurl": "https://www.twitch.tv/yourprincess/clip/BlueHandsomeFerretCurseLit"
+                },
+                {
+                    "id": "RoyalFlush",
+                    "img": "playingcards",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-03-02",
+                    "fullname": "Winning Royal Flush",
+                    "description": "The exact moment I obtained a royal flush and won over $30,000.",
+                    "clipurl": "https://www.twitch.tv/yourprincess/clip/HeadstrongHyperStinkbugKlappa"
+                },
+                {
+                    "id": "GodlyDagger",
+                    "img": "dagger",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-03-22",
+                    "fullname": "Godly Dagger Drop",
+                    "description": "Obtaining the best dagger in the server on Diablo 3.",
+                    "clipurl": "https://www.twitch.tv/yourprincess/clip/SourAlluringPigBuddhaBar"
+                },
+                {
+                    "id": "BeatMario",
+                    "img": "mushroom",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-03-28",
+                    "fullname": "Mario Speedrun Record",
+                    "description": "Catch me when I beat the world record for a Mario speedrun.",
+                    "clipurl": "https://www.twitch.tv/yourprincess/clip/DifferentExpensiveSushiWholeWheat"
+                },
+                {
+                    "id": "BeatEliteFour",
+                    "img": "pokeball",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-01-03",
+                    "fullname": "Beat Elite Four",
+                    "description": "Our community finally beat the elite four while playing Pokemon!",
+                    "clipurl": "https://www.twitch.tv/yourprincess/clip/CallousDelightfulTarsierMingLee"
+                }
+            ]
         },
         {
             "id": "MonolithicTV",
-            "activebadge": "RoyalFlush",
-            "awardedbadges": {
-                "GodlyDagger": true,
-                "RoyalFlush": true,
-                "BeatEliteFour": true,
-                "BeatMario": true,
-                "FirstZakumClear": true
+            "badges": [{
+                "id": "FirstZakumClear",
+                "img": "zakum",
+                "awarded": false,
+                "active": false,
+                "eventdate": "2018-07-23",
+                "fullname": "First Zakum Clear",
+                "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/BlueHandsomeFerretCurseLit"
+            },
+            {
+                "id": "RoyalFlush",
+                "img": "playingcards",
+                "awarded": false,
+                "active": false,
+                "eventdate": "2018-03-02",
+                "fullname": "Winning Royal Flush",
+                "description": "The exact moment I obtained a royal flush and won over $30,000.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/HeadstrongHyperStinkbugKlappa"
+            },
+            {
+                "id": "GodlyDagger",
+                "img": "dagger",
+                "awarded": true,
+                "active": true,
+                "eventdate": "2018-03-22",
+                "fullname": "Godly Dagger Drop",
+                "description": "Obtaining the best dagger in the server on Diablo 3.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/SourAlluringPigBuddhaBar"
+            },
+            {
+                "id": "BeatMario",
+                "img": "mushroom",
+                "awarded": true,
+                "active": false,
+                "eventdate": "2018-03-28",
+                "fullname": "Mario Speedrun Record",
+                "description": "Catch me when I beat the world record for a Mario speedrun.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/DifferentExpensiveSushiWholeWheat"
+            },
+            {
+                "id": "BeatEliteFour",
+                "img": "pokeball",
+                "awarded": true,
+                "active": false,
+                "eventdate": "2018-01-03",
+                "fullname": "Beat Elite Four",
+                "description": "Our community finally beat the elite four while playing Pokemon!",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/CallousDelightfulTarsierMingLee"
             }
+        ]
         },
         {
             "id": "XZeta",
-            "activebadge": "FirstZakumClear",
-            "awardedbadges": {
-                "FirstZakumClear": true
+            "badges": [{
+                "id": "FirstZakumClear",
+                "img": "zakum",
+                "awarded": false,
+                "active": false,
+                "eventdate": "2018-07-23",
+                "fullname": "First Zakum Clear",
+                "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/BlueHandsomeFerretCurseLit"
+            },
+            {
+                "id": "RoyalFlush",
+                "img": "playingcards",
+                "awarded": true,
+                "active": true,
+                "eventdate": "2018-03-02",
+                "fullname": "Winning Royal Flush",
+                "description": "The exact moment I obtained a royal flush and won over $30,000.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/HeadstrongHyperStinkbugKlappa"
+            },
+            {
+                "id": "GodlyDagger",
+                "img": "dagger",
+                "awarded": true,
+                "active": false,
+                "eventdate": "2018-03-22",
+                "fullname": "Godly Dagger Drop",
+                "description": "Obtaining the best dagger in the server on Diablo 3.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/SourAlluringPigBuddhaBar"
+            },
+            {
+                "id": "BeatMario",
+                "img": "mushroom",
+                "awarded": true,
+                "active": false,
+                "eventdate": "2018-03-28",
+                "fullname": "Mario Speedrun Record",
+                "description": "Catch me when I beat the world record for a Mario speedrun.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/DifferentExpensiveSushiWholeWheat"
+            },
+            {
+                "id": "BeatEliteFour",
+                "img": "pokeball",
+                "awarded": true,
+                "active": false,
+                "eventdate": "2018-01-03",
+                "fullname": "Beat Elite Four",
+                "description": "Our community finally beat the elite four while playing Pokemon!",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/CallousDelightfulTarsierMingLee"
             }
+        ]
         },
         {
             "id": "Plutonium",
-            "activebadge": "FirstZakumClear",
-            "awardedbadges": {
-                "BeatEliteFour": true,
-                "FirstZakumClear": true
+            "badges": [{
+                "id": "FirstZakumClear",
+                "img": "zakum",
+                "awarded": false,
+                "active": false,
+                "eventdate": "2018-07-23",
+                "fullname": "First Zakum Clear",
+                "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/BlueHandsomeFerretCurseLit"
+            },
+            {
+                "id": "RoyalFlush",
+                "img": "playingcards",
+                "awarded": false,
+                "active": false,
+                "eventdate": "2018-03-02",
+                "fullname": "Winning Royal Flush",
+                "description": "The exact moment I obtained a royal flush and won over $30,000.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/HeadstrongHyperStinkbugKlappa"
+            },
+            {
+                "id": "GodlyDagger",
+                "img": "dagger",
+                "awarded": false,
+                "active": false,
+                "eventdate": "2018-03-22",
+                "fullname": "Godly Dagger Drop",
+                "description": "Obtaining the best dagger in the server on Diablo 3.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/SourAlluringPigBuddhaBar"
+            },
+            {
+                "id": "BeatMario",
+                "img": "mushroom",
+                "awarded": false,
+                "active": false,
+                "eventdate": "2018-03-28",
+                "fullname": "Mario Speedrun Record",
+                "description": "Catch me when I beat the world record for a Mario speedrun.",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/DifferentExpensiveSushiWholeWheat"
+            },
+            {
+                "id": "BeatEliteFour",
+                "img": "pokeball",
+                "awarded": true,
+                "active": true,
+                "eventdate": "2018-01-03",
+                "fullname": "Beat Elite Four",
+                "description": "Our community finally beat the elite four while playing Pokemon!",
+                "clipurl": "https://www.twitch.tv/yourprincess/clip/CallousDelightfulTarsierMingLee"
             }
-        }
-    ],
-    "badges": [{
-            "id": "FirstZakumClear",
-            "img": "zakum",
-            "eventdate": "2018-07-23",
-            "fullname": "First Zakum Clear",
-            "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates."
-        },
-        {
-            "id": "RoyalFlush",
-            "img": "playingcards",
-            "eventdate": "2018-03-02",
-            "fullname": "Winning Royal Flush",
-            "description": "The exact moment I obtained a royal flush and won over $30,000."
-        },
-        {
-            "id": "GodlyDagger",
-            "img": "dagger",
-            "eventdate": "2018-03-22",
-            "fullname": "Godly Dagger Drop",
-            "description": "Obtaining the best dagger in the server on Diablo 3."
-        },
-        {
-            "id": "BeatMario",
-            "img": "mushroom",
-            "eventdate": "2018-03-28",
-            "fullname": "Mario Speedrun Record",
-            "description": "Catch me when I beat the world record for a Mario speedrun."
-        },
-        {
-            "id": "BeatEliteFour",
-            "img": "pokeball",
-            "eventdate": "2018-01-03",
-            "fullname": "Beat Elite Four",
-            "description": "Our community finally beat the elite four while playing Pokemon!"
+        ]
         }
     ]
 }
