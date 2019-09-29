@@ -66,36 +66,39 @@ class App extends Component {
   // TODO: Prolly replace this with BadgeList component
   renderBadgeList() {
     const { badges } = this.props.badges;
+    const overrideUlStyle = {
+      paddingLeft: '3%'
+    };
     if (badges) {
       return (
-        <ul>
+        <ul style={overrideUlStyle}>
           {badges.map((item, key) => {
-            return <BadgeListItem badge={item} />;
+            return <BadgeListItem key={key} badge={item} />;
           })}
         </ul>
       );
     }
   }
 
+  renderCurrentBadge(){
+    const { badges } = this.props.badges;
+    if(badges){
+      const foundActiveBadge = badges.find(badge => {
+        console.log(badge);
+        return badge.active === true
+      });
+      if(foundActiveBadge){
+        return <BadgeStatus badge={foundActiveBadge}/>
+      }
+    }
+    return null;
+  }
+
   render() {
-    const tempBadge = {
-      id: "FirstZakumClear",
-      img: "zakum",
-      name: "Zakum",
-      imgUrl: "https://i.imgur.com/pKixFxj.png",
-      awarded: false,
-      active: true,
-      eventDate: "2018-07-23",
-      fullName: "First Zakum Clear",
-      description:
-        "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
-      clipUrl: "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
-    };
     if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
-          {/*<BadgeStatus iconUrl={'https://i.imgur.com/pKixFxj.png'} awarded={true} active={true} name={'zakum'}/>*/}
-          <BadgeStatus badge={tempBadge} />
+          {this.renderCurrentBadge()}
           <Typography component="h2" variant="overline">
             Your Badges
           </Typography>

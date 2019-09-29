@@ -6,7 +6,7 @@
                     "img": "zakum",
                     "name": "Zakum",
                     "imgUrl": "https://i.imgur.com/pKixFxj.png",
-                    "awarded": false,
+                    "awarded": true,
                     "active": true,
                     "eventDate": "2018-07-23",
                     "fullName": "First Zakum Clear",

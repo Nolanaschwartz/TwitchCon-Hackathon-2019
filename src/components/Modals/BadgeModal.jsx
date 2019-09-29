@@ -16,7 +16,7 @@ function BadgeModal(props) {
       <BadgeIcon badge={props.badge} />
       <h3>{props.header || "placeholder header"}</h3>
       <p>{props.message || "placeholder"}</p>
-      <Button color='#6478D3' variant={"text"}>{props.action || "Button"}</Button>
+      <Button color={'#6478D3'} variant={"text"}>{props.action || "Button"}</Button>
     </div>
   );
 }
