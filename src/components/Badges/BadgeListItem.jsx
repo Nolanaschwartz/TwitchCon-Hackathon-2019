@@ -7,8 +7,8 @@ function BadgeListItem(props) {
   return (
     <li>
       <BadgeIcon iconUrl={props.badge.iconUrl} />
-      <p>{props.badge.fullname}</p>
-      <p>Earned: {props.badge.date}</p>
+      <p>{props.badge.fullName}</p>
+      <p>Earned: {props.badge.eventDate}</p>
     </li>
   );
 }

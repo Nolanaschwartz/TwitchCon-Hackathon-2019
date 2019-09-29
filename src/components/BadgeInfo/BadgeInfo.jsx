@@ -10,7 +10,7 @@ function BadgeInfo(props) {
       <VideoPlayer clipUrl={props.badge.clipUrl+'&autoplay=false'} />
       <BadgeStatus badge={props.badge}/>
       <div>
-        <span>{props.badge.date}</span>
+        <span>{props.badge.eventDate}</span>
         <h1>{props.badge.name}</h1>
         <p>{props.badge.description}</p>
       </div>

@@ -7,10 +7,10 @@ import Button from "@material-ui/core/Button";
 function BadgeConfirmMenu(props) {
   return (
     <div>
-      <h3>{props.badge.fullname}</h3>
+      <h3>{props.badge.fullName}</h3>
       <BadgeIcon badge={props.badge} />
       <Button>Cancel</Button>
-      <Button onClick={props.Action}>{props.actionText}</Button>
+      <Button onClick={props.action}>{props.actionText}</Button>
     </div>
   );
 }

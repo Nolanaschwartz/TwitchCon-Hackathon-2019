@@ -5,13 +5,13 @@
                     "id": "FirstZakumClear",
                     "img": "zakum",
                     "name": "Zakum",
-                    "imgurl": "https://i.imgur.com/pKixFxj.png",
+                    "imgUrl": "https://i.imgur.com/pKixFxj.png",
                     "awarded": false,
                     "active": true,
-                    "eventdate": "2018-07-23",
-                    "fullname": "First Zakum Clear",
+                    "eventDate": "2018-07-23",
+                    "fullName": "First Zakum Clear",
                     "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
-                    "clipurl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
+                    "clipUrl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
                 },
                 {
                     "id": "RoyalFlush",
