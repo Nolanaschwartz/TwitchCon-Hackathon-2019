@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import TwitchAuthentication from "../util/TwitchAuthentication";
+import Extension from "./Extension/Extension";
 import { authenticateUser } from "../modules/app";
 
 class App extends Component {
@@ -58,13 +60,7 @@ class App extends Component {
     if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
-          <div
-            className={this.state.theme === "light" ? "App-light" : "App-dark"}
-          >
-            <p>Hello world! I'm authenticated!</p>
-            <p>My token is: {this.props.app.authToken}</p>
-            <p>My userId is: {this.props.app.sharedId}</p>
-          </div>
+          <Extension />
         </div>
       );
     } else {

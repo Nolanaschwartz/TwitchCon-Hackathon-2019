@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+// import BadgeListItem from "./BadgeListItem";
+
 class Badges extends Component {
   render() {
     if (this.props.badges) {
@@ -9,6 +11,7 @@ class Badges extends Component {
           Badges
           <ul>
             {Object.values(this.props.badges).map((value, index) => {
+              // return <BadgeListItem />
               return <li key={index}>{value.id}</li>;
             })}
           </ul>
