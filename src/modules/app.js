@@ -1,5 +1,3 @@
-import * as db from "../db/db";
-
 // action types
 
 const APP_AUTHENTICATED = "app/authenticated";
@@ -11,7 +9,7 @@ const INITIAL_STATE = {
   authToken: null,
   isModerator: null,
   sharedId: null,
-  user: { ...db.users[0] }
+ // user: { ...db.users[0] }
 };
 
 // reducer
