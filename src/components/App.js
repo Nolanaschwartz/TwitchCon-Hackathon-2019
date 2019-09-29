@@ -1,13 +1,11 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
-import TwitchAuthentication from "../util/TwitchAuthentication";
+import { authenticateUser } from "../modules/app";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.Authentication = new TwitchAuthentication();
-
-    //if the extension is running on twitch or dev rig, set the shorthand here. otherwise, set to null.
     this.twitch = window.Twitch ? window.Twitch.ext : null;
     this.state = {
       finishedLoading: false,
@@ -35,24 +33,7 @@ class App extends Component {
   componentDidMount() {
     if (this.twitch) {
       this.twitch.onAuthorized(auth => {
-        this.Authentication.setToken(auth.token, auth.userId);
-        if (!this.state.finishedLoading) {
-          // if the component hasn't finished loading (as in we've not set up after getting a token), let's set it up now.
-
-          // now we've done the setup for the component, let's set the state to true to force a rerender with the correct data.
-          this.setState(() => {
-            return { finishedLoading: true };
-          });
-        }
-      });
-
-      this.twitch.listen("broadcast", (target, contentType, body) => {
-        this.twitch.rig.log(
-          `New PubSub message!\n${target}\n${contentType}\n${body}`
-        );
-        // now that you've got a listener, do something with the result...
-
-        // do something...
+        this.props.authenticateUser(auth.token, auth.userId);
       });
 
       this.twitch.onVisibilityChanged((isVisible, _c) => {
@@ -74,39 +55,29 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.finishedLoading && this.state.isVisible) {
+    if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
           <div
             className={this.state.theme === "light" ? "App-light" : "App-dark"}
           >
-            <p>Hello world!</p>
-            <p>My token is: {this.Authentication.state.token}</p>
-            <p>My opaque ID is {this.Authentication.getOpaqueId()}.</p>
-            <div>
-              {this.Authentication.isModerator() ? (
-                <p>
-                  I am currently a mod, and here's a special mod button{" "}
-                  <input value="mod button" type="button" />
-                </p>
-              ) : (
-                "I am currently not a mod."
-              )}
-            </div>
-            <p>
-              I have{" "}
-              {this.Authentication.hasSharedId()
-                ? `shared my ID, and my user_id is ${this.Authentication.getUserId()}`
-                : "not shared my ID"}
-              .
-            </p>
+            <p>Hello world! I'm authenticated!</p>
+            <p>My token is: {this.props.app.authToken}</p>
+            <p>My userId is: {this.props.app.sharedId}</p>
           </div>
         </div>
       );
     } else {
-      return <div className="App">No State</div>;
+      return <div className="App">Loading...</div>;
     }
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  app: state.app
+});
+
+export default connect(
+  mapStateToProps,
+  { authenticateUser }
+)(App);
