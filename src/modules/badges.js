@@ -6,6 +6,7 @@ const FETCHING_BADGES = "badges/fetching";
 const FETCHED_BADGES = "badges/fetched";
 const FETCH_BADGES_ERROR = "badges/fetch/error";
 const CHANGING_ACTIVE_BADGE = "badges/change/active";
+const CHANGED_ACTIVE_BADGE = "badges/changed/active";
 const CHANGING_ACTIVE_BADGE_ERROR = "badges/change/active/error";
 
 // initial state
@@ -13,8 +14,10 @@ const CHANGING_ACTIVE_BADGE_ERROR = "badges/change/active/error";
 const INITIAL_STATE = {
   fetching: false,
   badges: [],
+  changingActive: false,
   activeBadge: null,
-  fetchError: false
+  fetchError: false,
+  changeError: false
 };
 
 // reducer
@@ -35,6 +38,12 @@ export default function reducer(state = INITIAL_STATE, action) {
       return { ...state, fetching: false, badges: action.payload, activeBadge };
     case FETCH_BADGES_ERROR:
       return { ...state, fetching: false, fetchError: true };
+    case CHANGING_ACTIVE_BADGE:
+      return { ...state, changingActive: true };
+    case CHANGED_ACTIVE_BADGE:
+      return { ...state, changingActive: false };
+    case CHANGING_ACTIVE_BADGE_ERROR:
+      return { ...state, changingActive: false, changeError: true };
     default:
       return state;
   }
@@ -50,6 +59,19 @@ export function fetchBadges(userId) {
       dispatch({ type: FETCHED_BADGES, payload: data.badges });
     } catch {
       dispatch({ type: FETCH_BADGES_ERROR });
+    }
+  };
+}
+
+export function changeActiveBadge(userId, badgeId) {
+  return async dispatch => {
+    dispatch({ type: CHANGING_ACTIVE_BADGE });
+    try {
+      const user = await api.changeActiveBadge(userId, badgeId);
+      dispatch({ type: FETCHED_BADGES, payload: user.badges });
+      dispatch({ type: CHANGED_ACTIVE_BADGE });
+    } catch {
+      dispatch({ type: CHANGING_ACTIVE_BADGE_ERROR });
     }
   };
 }

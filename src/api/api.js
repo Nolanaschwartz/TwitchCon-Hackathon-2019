@@ -27,5 +27,7 @@ export async function changeActiveBadge(userId, badgeId) {
     }
   }
 
-  console.log(user);
+  await axios.put(API_BASEURL + "/users/" + userId, user);
+
+  return user;
 }
