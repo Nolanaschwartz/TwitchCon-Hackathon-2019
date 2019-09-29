@@ -4,6 +4,7 @@
             "badges": [{
                     "id": "FirstZakumClear",
                     "img": "zakum",
+                    "name": "Zakum",
                     "imgurl": "https://i.imgur.com/pKixFxj.png",
                     "awarded": false,
                     "active": true,
@@ -15,7 +16,8 @@
                 {
                     "id": "RoyalFlush",
                     "img": "playingcards",
-                    "imgurl":"https://i.imgur.com/KINWBfP.png",
+                    "name": "Playing Cards",
+                    "imgurl": "https://i.imgur.com/KINWBfP.png",
                     "awarded": false,
                     "active": false,
                     "eventdate": "2018-03-02",
@@ -26,7 +28,8 @@
                 {
                     "id": "GodlyDagger",
                     "img": "dagger",
-                    "imgurl":"https://i.imgur.com/9WtMUFM.png",
+                    "name": "Dagger",
+                    "imgurl": "https://i.imgur.com/9WtMUFM.png",
                     "awarded": true,
                     "active": false,
                     "eventdate": "2018-03-22",
@@ -37,7 +40,8 @@
                 {
                     "id": "BeatMario",
                     "img": "mushroom",
-                    "imgurl":"https://i.imgur.com/0DEUYqV.png",
+                    "name": "Mushroom",
+                    "imgurl": "https://i.imgur.com/0DEUYqV.png",
                     "awarded": true,
                     "active": false,
                     "eventdate": "2018-03-28",
@@ -48,6 +52,7 @@
                 {
                     "id": "BeatEliteFour",
                     "img": "pokeball",
+                    "name": "Pokeball",
                     "imgurl": "https://i.imgur.com/II1dSXI.png",
                     "awarded": true,
                     "active": false,
@@ -61,179 +66,194 @@
         {
             "id": "MonolithicTV",
             "badges": [{
-                "id": "FirstZakumClear",
-                "img": "zakum",
-                "imgurl": "https://i.imgur.com/pKixFxj.png",
-                "awarded": false,
-                "active": false,
-                "eventdate": "2018-07-23",
-                "fullname": "First Zakum Clear",
-                "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
-            },
-            {
-                "id": "RoyalFlush",
-                "img": "playingcards",
-                "imgurl":"https://i.imgur.com/KINWBfP.png",
-                "awarded": false,
-                "active": false,
-                "eventdate": "2018-03-02",
-                "fullname": "Winning Royal Flush",
-                "description": "The exact moment I obtained a royal flush and won over $30,000.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=HeadstrongHyperStinkbugKlappa"
-            },
-            {
-                "id": "GodlyDagger",
-                "img": "dagger",
-                "imgurl":"https://i.imgur.com/9WtMUFM.png",
-                "awarded": true,
-                "active": true,
-                "eventdate": "2018-03-22",
-                "fullname": "Godly Dagger Drop",
-                "description": "Obtaining the best dagger in the server on Diablo 3.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=SourAlluringPigBuddhaBar"
-            },
-            {
-                "id": "BeatMario",
-                "img": "mushroom",
-                "imgurl":"https://i.imgur.com/0DEUYqV.png",
-                "awarded": true,
-                "active": false,
-                "eventdate": "2018-03-28",
-                "fullname": "Mario Speedrun Record",
-                "description": "Catch me when I beat the world record for a Mario speedrun.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=DifferentExpensiveSushiWholeWheat"
-            },
-            {
-                "id": "BeatEliteFour",
-                "img": "pokeball",
-                "imgurl": "https://i.imgur.com/II1dSXI.png",
-                "awarded": true,
-                "active": false,
-                "eventdate": "2018-01-03",
-                "fullname": "Beat Elite Four",
-                "description": "Our community finally beat the elite four while playing Pokemon!",
-                "clipurl": "https://clips.twitch.tv/embed?clip=CallousDelightfulTarsierMingLee"
-            }
-        ]
+                    "id": "FirstZakumClear",
+                    "img": "zakum",
+                    "name": "Zakum",
+                    "imgurl": "https://i.imgur.com/pKixFxj.png",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-07-23",
+                    "fullname": "First Zakum Clear",
+                    "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
+                },
+                {
+                    "id": "RoyalFlush",
+                    "img": "playingcards",
+                    "name": "Playing Cards",
+                    "imgurl": "https://i.imgur.com/KINWBfP.png",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-03-02",
+                    "fullname": "Winning Royal Flush",
+                    "description": "The exact moment I obtained a royal flush and won over $30,000.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=HeadstrongHyperStinkbugKlappa"
+                },
+                {
+                    "id": "GodlyDagger",
+                    "img": "dagger",
+                    "name": "Dagger",
+                    "imgurl": "https://i.imgur.com/9WtMUFM.png",
+                    "awarded": true,
+                    "active": true,
+                    "eventdate": "2018-03-22",
+                    "fullname": "Godly Dagger Drop",
+                    "description": "Obtaining the best dagger in the server on Diablo 3.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=SourAlluringPigBuddhaBar"
+                },
+                {
+                    "id": "BeatMario",
+                    "img": "mushroom",
+                    "name": "Mushroom",
+                    "imgurl": "https://i.imgur.com/0DEUYqV.png",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-03-28",
+                    "fullname": "Mario Speedrun Record",
+                    "description": "Catch me when I beat the world record for a Mario speedrun.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=DifferentExpensiveSushiWholeWheat"
+                },
+                {
+                    "id": "BeatEliteFour",
+                    "img": "pokeball",
+                    "name": "Pokeball",
+                    "imgurl": "https://i.imgur.com/II1dSXI.png",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-01-03",
+                    "fullname": "Beat Elite Four",
+                    "description": "Our community finally beat the elite four while playing Pokemon!",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=CallousDelightfulTarsierMingLee"
+                }
+            ]
         },
         {
             "id": "XZeta",
             "badges": [{
-                "id": "FirstZakumClear",
-                "img": "zakum",
-                "imgurl": "https://i.imgur.com/pKixFxj.png",
-                "awarded": false,
-                "active": false,
-                "eventdate": "2018-07-23",
-                "fullname": "First Zakum Clear",
-                "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
-            },
-            {
-                "id": "RoyalFlush",
-                "img": "playingcards",
-                "imgurl":"https://i.imgur.com/KINWBfP.png",
-                "awarded": true,
-                "active": true,
-                "eventdate": "2018-03-02",
-                "fullname": "Winning Royal Flush",
-                "description": "The exact moment I obtained a royal flush and won over $30,000.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=HeadstrongHyperStinkbugKlappa"
-            },
-            {
-                "id": "GodlyDagger",
-                "img": "dagger",
-                "imgurl":"https://i.imgur.com/9WtMUFM.png",
-                "awarded": true,
-                "active": false,
-                "eventdate": "2018-03-22",
-                "fullname": "Godly Dagger Drop",
-                "description": "Obtaining the best dagger in the server on Diablo 3.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=SourAlluringPigBuddhaBar"
-            },
-            {
-                "id": "BeatMario",
-                "img": "mushroom",
-                "imgurl":"https://i.imgur.com/0DEUYqV.png",
-                "awarded": true,
-                "active": false,
-                "eventdate": "2018-03-28",
-                "fullname": "Mario Speedrun Record",
-                "description": "Catch me when I beat the world record for a Mario speedrun.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=DifferentExpensiveSushiWholeWheat"
-            },
-            {
-                "id": "BeatEliteFour",
-                "img": "pokeball",
-                "imgurl": "https://i.imgur.com/II1dSXI.png",
-                "awarded": true,
-                "active": false,
-                "eventdate": "2018-01-03",
-                "fullname": "Beat Elite Four",
-                "description": "Our community finally beat the elite four while playing Pokemon!",
-                "clipurl": "https://clips.twitch.tv/embed?clip=CallousDelightfulTarsierMingLee"
-            }
-        ]
+                    "id": "FirstZakumClear",
+                    "img": "zakum",
+                    "name": "Zakum",
+                    "imgurl": "https://i.imgur.com/pKixFxj.png",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-07-23",
+                    "fullname": "First Zakum Clear",
+                    "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
+                },
+                {
+                    "id": "RoyalFlush",
+                    "img": "playingcards",
+                    "name": "Playing Cards",
+                    "imgurl": "https://i.imgur.com/KINWBfP.png",
+                    "awarded": true,
+                    "active": true,
+                    "eventdate": "2018-03-02",
+                    "fullname": "Winning Royal Flush",
+                    "description": "The exact moment I obtained a royal flush and won over $30,000.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=HeadstrongHyperStinkbugKlappa"
+                },
+                {
+                    "id": "GodlyDagger",
+                    "img": "dagger",
+                    "name": "Dagger",
+                    "imgurl": "https://i.imgur.com/9WtMUFM.png",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-03-22",
+                    "fullname": "Godly Dagger Drop",
+                    "description": "Obtaining the best dagger in the server on Diablo 3.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=SourAlluringPigBuddhaBar"
+                },
+                {
+                    "id": "BeatMario",
+                    "img": "mushroom",
+                    "name": "Mushroom",
+                    "imgurl": "https://i.imgur.com/0DEUYqV.png",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-03-28",
+                    "fullname": "Mario Speedrun Record",
+                    "description": "Catch me when I beat the world record for a Mario speedrun.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=DifferentExpensiveSushiWholeWheat"
+                },
+                {
+                    "id": "BeatEliteFour",
+                    "img": "pokeball",
+                    "name": "Pokeball",
+                    "imgurl": "https://i.imgur.com/II1dSXI.png",
+                    "awarded": true,
+                    "active": false,
+                    "eventdate": "2018-01-03",
+                    "fullname": "Beat Elite Four",
+                    "description": "Our community finally beat the elite four while playing Pokemon!",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=CallousDelightfulTarsierMingLee"
+                }
+            ]
         },
         {
             "id": "Plutonium",
             "badges": [{
-                "id": "FirstZakumClear",
-                "img": "zakum",
-                "imgurl": "https://i.imgur.com/pKixFxj.png",
-                "awarded": false,
-                "active": false,
-                "eventdate": "2018-07-23",
-                "fullname": "First Zakum Clear",
-                "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
-            },
-            {
-                "id": "RoyalFlush",
-                "img": "playingcards",
-                "imgurl":"https://i.imgur.com/KINWBfP.png",
-                "awarded": false,
-                "active": false,
-                "eventdate": "2018-03-02",
-                "fullname": "Winning Royal Flush",
-                "description": "The exact moment I obtained a royal flush and won over $30,000.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=HeadstrongHyperStinkbugKlappa"
-            },
-            {
-                "id": "GodlyDagger",
-                "img": "dagger",
-                "imgurl":"https://i.imgur.com/9WtMUFM.png",
-                "awarded": false,
-                "active": false,
-                "eventdate": "2018-03-22",
-                "fullname": "Godly Dagger Drop",
-                "description": "Obtaining the best dagger in the server on Diablo 3.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=SourAlluringPigBuddhaBar"
-            },
-            {
-                "id": "BeatMario",
-                "img": "mushroom",
-                "imgurl":"https://i.imgur.com/0DEUYqV.png",
-                "awarded": false,
-                "active": false,
-                "eventdate": "2018-03-28",
-                "fullname": "Mario Speedrun Record",
-                "description": "Catch me when I beat the world record for a Mario speedrun.",
-                "clipurl": "https://clips.twitch.tv/embed?clip=DifferentExpensiveSushiWholeWheat"
-            },
-            {
-                "id": "BeatEliteFour",
-                "img": "pokeball",
-                "imgurl": "https://i.imgur.com/II1dSXI.png",
-                "awarded": true,
-                "active": true,
-                "eventdate": "2018-01-03",
-                "fullname": "Beat Elite Four",
-                "description": "Our community finally beat the elite four while playing Pokemon!",
-                "clipurl": "https://clips.twitch.tv/embed?clip=CallousDelightfulTarsierMingLee"
-            }
-        ]
+                    "id": "FirstZakumClear",
+                    "img": "zakum",
+                    "name": "Zakum",
+                    "imgurl": "https://i.imgur.com/pKixFxj.png",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-07-23",
+                    "fullname": "First Zakum Clear",
+                    "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
+                },
+                {
+                    "id": "RoyalFlush",
+                    "img": "playingcards",
+                    "name": "Playing Cards",
+                    "imgurl": "https://i.imgur.com/KINWBfP.png",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-03-02",
+                    "fullname": "Winning Royal Flush",
+                    "description": "The exact moment I obtained a royal flush and won over $30,000.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=HeadstrongHyperStinkbugKlappa"
+                },
+                {
+                    "id": "GodlyDagger",
+                    "img": "dagger",
+                    "name": "Dagger",
+                    "imgurl": "https://i.imgur.com/9WtMUFM.png",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-03-22",
+                    "fullname": "Godly Dagger Drop",
+                    "description": "Obtaining the best dagger in the server on Diablo 3.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=SourAlluringPigBuddhaBar"
+                },
+                {
+                    "id": "BeatMario",
+                    "img": "mushroom",
+                    "name": "Mushroom",
+                    "imgurl": "https://i.imgur.com/0DEUYqV.png",
+                    "awarded": false,
+                    "active": false,
+                    "eventdate": "2018-03-28",
+                    "fullname": "Mario Speedrun Record",
+                    "description": "Catch me when I beat the world record for a Mario speedrun.",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=DifferentExpensiveSushiWholeWheat"
+                },
+                {
+                    "id": "BeatEliteFour",
+                    "img": "pokeball",
+                    "name": "Pokeball",
+                    "imgurl": "https://i.imgur.com/II1dSXI.png",
+                    "awarded": true,
+                    "active": true,
+                    "eventdate": "2018-01-03",
+                    "fullname": "Beat Elite Four",
+                    "description": "Our community finally beat the elite four while playing Pokemon!",
+                    "clipurl": "https://clips.twitch.tv/embed?clip=CallousDelightfulTarsierMingLee"
+                }
+            ]
         }
     ]
 }
