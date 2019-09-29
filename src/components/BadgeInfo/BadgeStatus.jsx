@@ -36,7 +36,7 @@ function BadgeStatus(props) {
 
       <Card className={useStyles.card}>
         <CardContent>
-          <Typography className={useStyles.title} color="textSecondary" gutterBottom>
+          <Typography component="h1" className={useStyles.title} color="textSecondary" gutterBottom>
             <h4 style={{ color: 'black', fontWeight: "bold" }}> {props.badge.active ? "Active Badge\n" : "Earning Badge"}</h4>
           </Typography>
 

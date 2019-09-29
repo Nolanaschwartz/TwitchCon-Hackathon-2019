@@ -63,6 +63,20 @@ class App extends Component {
     }
   }
 
+  // TODO: Prolly replace this with BadgeList component
+  renderBadgeList() {
+    const { badges } = this.props.badges;
+    if (badges) {
+      return (
+        <ul>
+          {badges.map((item, key) => {
+            return <BadgeListItem badge={item} />;
+          })}
+        </ul>
+      );
+    }
+  }
+
   render() {
     const tempBadge = {
       id: "FirstZakumClear",
@@ -85,9 +99,7 @@ class App extends Component {
           <Typography component="h2" variant="overline">
             Your Badges
           </Typography>
-          <ul>
-            <BadgeListItem badge={tempBadge} />
-          </ul>
+          {this.renderBadgeList()}
         </div>
       );
     } else {
