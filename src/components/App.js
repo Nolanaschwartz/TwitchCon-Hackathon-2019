@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchBadges, selectBadge } from "../modules/badges";
+import { fetchBadges, selectBadge, changeActiveBadge } from "../modules/badges";
 
 import { Typography } from "@material-ui/core";
 
@@ -66,6 +66,7 @@ class App extends Component {
 
   handleBadgeClick = badge => {
     this.props.selectBadge(badge);
+    // this.props.changeActiveBadge(null, badge);
   };
 
   // TODO: Prolly replace this with BadgeList component
@@ -123,5 +124,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { authenticateUser, fetchBadges, selectBadge }
+  { authenticateUser, fetchBadges, selectBadge, changeActiveBadge }
 )(App);
