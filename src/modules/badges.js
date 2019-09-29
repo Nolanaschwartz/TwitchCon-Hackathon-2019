@@ -1,12 +1,11 @@
-import * as db from "../db/db";
-
+]
 // action types
 
 // TODO
 
 // initial state
 
-const INITIAL_STATE = { ...db.badges };
+//const INITIAL_STATE = { ...db.badges };
 
 // reducer
 

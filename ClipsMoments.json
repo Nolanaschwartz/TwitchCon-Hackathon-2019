@@ -75,7 +75,7 @@
     "whitelistedConfigUrls": [],
     "whitelistedPanelUrls": []
   },
-  "frontendCommand": "",
+  "frontendCommand": "yarn start",
   "frontendFolderName": "/Users/kairui/Documents/TwitchCon-Hackathon-2019",
   "name": "ClipsMoments"
 }
