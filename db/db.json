@@ -41,27 +41,37 @@
     "badges": [{
             "id": "FirstZakumClear",
             "img": "zakum",
-            "eventdate": "2018-07-23"
+            "eventdate": "2018-07-23",
+            "fullname": "First Zakum Clear",
+            "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates."
         },
         {
             "id": "RoyalFlush",
             "img": "playingcards",
-            "eventdate": "2018-03-02"
+            "eventdate": "2018-03-02",
+            "fullname": "Winning Royal Flush",
+            "description": "The exact moment I obtained a royal flush and won over $30,000."
         },
         {
             "id": "GodlyDagger",
             "img": "dagger",
-            "eventdate": "2018-03-22"
+            "eventdate": "2018-03-22",
+            "fullname": "Godly Dagger Drop",
+            "description": "Obtaining the best dagger in the server on Diablo 3."
         },
         {
             "id": "BeatMario",
             "img": "mushroom",
-            "eventdate": "2018-03-28"
+            "eventdate": "2018-03-28",
+            "fullname": "Mario Speedrun Record",
+            "description": "Catch me when I beat the world record for a Mario speedrun."
         },
         {
             "id": "BeatEliteFour",
             "img": "pokeball",
-            "eventdate": "2018-01-03"
+            "eventdate": "2018-01-03",
+            "fullname": "Beat Elite Four",
+            "description": "Our community finally beat the elite four while playing Pokemon!"
         }
     ]
 }
