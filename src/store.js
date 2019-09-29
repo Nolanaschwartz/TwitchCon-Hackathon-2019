@@ -4,12 +4,11 @@ import { combineReducers } from "redux";
 import { reducer as formReducer } from "redux-form";
 
 import app from "./modules/app";
-import badges from "./modules/badges";
+//import badges from "./modules/badges";
 
 const rootReducer = combineReducers({
   form: formReducer,
-  app,
-  badges
+  app
 });
 
 const store = createStore(

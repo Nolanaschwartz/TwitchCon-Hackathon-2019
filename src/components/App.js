@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import TwitchAuthentication from "../util/TwitchAuthentication";
-import Extension from "./Extension/Extension";
+//import Extension from "./Extension/Extension";
 import { authenticateUser } from "../modules/app";
 
 class App extends Component {
@@ -60,7 +60,6 @@ class App extends Component {
     if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
-          <Extension />
         </div>
       );
     } else {
