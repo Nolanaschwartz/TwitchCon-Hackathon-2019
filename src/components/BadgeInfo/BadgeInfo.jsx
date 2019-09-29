@@ -6,7 +6,7 @@ function BadgeInfo(props) {
   // TODO Styling
   return (
     <>
-      <VideoPlayer clipUrl={props.clipUrl} />
+      <VideoPlayer clipUrl={props.clipUrl+'&autoplay=false'} />
       <div>
         <span>{props.date}</span>
         <h1>{props.name}</h1>
