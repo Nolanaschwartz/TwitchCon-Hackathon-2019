@@ -16,7 +16,7 @@ function BadgeStatus(props) {
   return (
     <div>
       <p>{props.badge.active ? "Active Badge" : "Earning Badge"}</p>
-      <BadgeIcon iconUrl={props.badge.iconUrl} awarded={props.badge.awarded}/>
+      <BadgeIcon badge={props.badge}/>
       <p>{props.badge.name}</p>
       {button}
     </div>

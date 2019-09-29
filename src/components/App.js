@@ -61,22 +61,22 @@ class App extends Component {
   render() {
 
     const tempBadge = {
-      "id": "GodlyDagger",
-      "img": "dagger",
-      "name": "Dagger",
-      "imgurl": "https://i.imgur.com/9WtMUFM.png",
-      "awarded": true,
-      "active": false,
-      "eventdate": "2018-03-22",
-      "fullname": "Godly Dagger Drop",
-      "description": "Obtaining the best dagger in the server on Diablo 3.",
-      "clipUrl": "https://clips.twitch.tv/embed?clip=SourAlluringPigBuddhaBar"
+      "id": "FirstZakumClear",
+      "img": "zakum",
+      "name": "Zakum",
+      "imgUrl": "https://i.imgur.com/pKixFxj.png",
+      "awarded": false,
+      "active": true,
+      "eventDate": "2018-07-23",
+      "fullName": "First Zakum Clear",
+      "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+      "clipUrl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
     };
     if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
           {/*<BadgeStatus iconUrl={'https://i.imgur.com/pKixFxj.png'} awarded={true} active={true} name={'zakum'}/>*/}
-          <VideoPlayer badge={tempBadge}
+          <BadgeStatus badge={tempBadge}
           />
         </div>
       );
