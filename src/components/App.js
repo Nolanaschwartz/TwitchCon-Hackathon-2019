@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 import TwitchAuthentication from "../util/TwitchAuthentication";
 //import Extension from "./Extension/Extension";
 import { authenticateUser } from "../modules/app";
-import BadgeStatus from "./Badges/BadgeStatus";
-import VideoPlayer from "./VideoPlayer/VideoPlayer";
+import BadgeStatus from "./BadgeInfo/BadgeStatus";
+import VideoPlayer from "./BadgeInfo/VideoPlayer";
 
 class App extends Component {
   constructor(props) {
@@ -59,25 +59,24 @@ class App extends Component {
   }
 
   render() {
-
     const tempBadge = {
-      "id": "FirstZakumClear",
-      "img": "zakum",
-      "name": "Zakum",
-      "imgUrl": "https://i.imgur.com/pKixFxj.png",
-      "awarded": false,
-      "active": true,
-      "eventDate": "2018-07-23",
-      "fullName": "First Zakum Clear",
-      "description": "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
-      "clipUrl": "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
+      id: "FirstZakumClear",
+      img: "zakum",
+      name: "Zakum",
+      imgUrl: "https://i.imgur.com/pKixFxj.png",
+      awarded: false,
+      active: true,
+      eventDate: "2018-07-23",
+      fullName: "First Zakum Clear",
+      description:
+        "The first time I managed to clear Zakum as a level 137 dark night, along with my guildmates.",
+      clipUrl: "https://clips.twitch.tv/embed?clip=BlueHandsomeFerretCurseLit"
     };
     if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
           {/*<BadgeStatus iconUrl={'https://i.imgur.com/pKixFxj.png'} awarded={true} active={true} name={'zakum'}/>*/}
-          <BadgeStatus badge={tempBadge}
-          />
+          <BadgeStatus badge={tempBadge} />
         </div>
       );
     } else {

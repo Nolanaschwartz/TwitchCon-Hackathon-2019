@@ -1,5 +1,7 @@
 import React from "react";
-import BadgeIcon from "./BadgeIcon";
+import BadgeIcon from "../Badges/BadgeIcon";
+
+// activate button should route to Confirm Menu
 
 function BadgeStatus(props) {
   let button =
@@ -16,7 +18,7 @@ function BadgeStatus(props) {
   return (
     <div>
       <p>{props.badge.active ? "Active Badge" : "Earning Badge"}</p>
-      <BadgeIcon badge={props.badge}/>
+      <BadgeIcon badge={props.badge} />
       <p>{props.badge.name}</p>
       {button}
     </div>

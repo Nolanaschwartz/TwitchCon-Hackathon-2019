@@ -1,8 +1,13 @@
 import React from "react";
-import BadgeIcon from "./BadgeIcon";
+import BadgeIcon from "../Badges/BadgeIcon";
 import Button from "@material-ui/core/Button";
 
-// TODO Handle MouseEvents
+// route: /confirm/earn-badge/:id
+// route: /confirm/change-badge/:id
+
+// TODO Handle MouseEvents to disable old badge and enable new badge
+// TODO after POST request redirect to
+// TODO GetCurrentBadge
 
 function BadgeConfirmMenu(props) {
   return (

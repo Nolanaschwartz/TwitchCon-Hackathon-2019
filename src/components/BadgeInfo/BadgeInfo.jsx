@@ -1,14 +1,14 @@
 import React from "react";
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
-import BadgeStatus from "../Badges/BadgeStatus";
+import VideoPlayer from "./VideoPlayer";
+import BadgeStatus from "./BadgeStatus";
 
 // Data needed Data/Time, Title, and info
 function BadgeInfo(props) {
   // TODO Styling
   return (
     <>
-      <VideoPlayer clipUrl={props.badge.clipUrl+'&autoplay=false'} />
-      <BadgeStatus badge={props.badge}/>
+      <VideoPlayer clipUrl={props.badge.clipUrl + "&autoplay=false"} />
+      <BadgeStatus badge={props.badge} />
       <div>
         <span>{props.badge.eventDate}</span>
         <h1>{props.badge.name}</h1>

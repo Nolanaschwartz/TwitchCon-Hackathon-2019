@@ -8,8 +8,8 @@ const INITIAL_STATE = {
   authenticated: false,
   authToken: null,
   isModerator: null,
-  sharedId: null,
- // user: { ...db.users[0] }
+  sharedId: null
+  // user: { ...db.users[0] }
 };
 
 // reducer
