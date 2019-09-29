@@ -6,7 +6,7 @@ function BadgeListItem(props) {
 
   return (
     <li>
-      <BadgeIcon />
+      <BadgeIcon iconUrl={props.iconUrl} />
       <p>{props.achievement}</p>
       <p>Earned: {props.date}</p>
     </li>

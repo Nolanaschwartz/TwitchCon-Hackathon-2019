@@ -6,7 +6,7 @@ function BadgeConfirmMenu(props) {
   return (
     <div>
       <h3>{props.headingText}</h3>
-      <BadgeIcon />
+      <BadgeIcon iconUrl={props.iconUrl} />
       <Button>Cancel</Button>
       <Button onClick={props.Action}>{props.actionText}</Button>
     </div>
