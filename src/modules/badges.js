@@ -1,3 +1,5 @@
+import * as api from "../api/api";
+
 // action types
 
 const FETCHING_BADGES = "badges/fetching";
@@ -20,6 +22,8 @@ export default function reducer(state = INITIAL_STATE, action) {
       return { ...state, fetching: true };
     case FETCHED_BADGES:
       return { ...state, fetching: false, badges: action.payload };
+    case FETCH_BADGES_ERROR:
+      return { ...state, fetching: false, fetchError: true };
     default:
       return state;
   }
@@ -27,10 +31,14 @@ export default function reducer(state = INITIAL_STATE, action) {
 
 // actions
 
-export function fetchBadges() {
-  return dispatch => {
+export function fetchBadges(userId) {
+  return async dispatch => {
     dispatch({ type: FETCHING_BADGES });
-    // TODO: Api call
-    dispatch({ type: FETCHED_BADGES, payload: [{ id: "1" }] });
+    try {
+      const data = await api.fetchBadgesByUser(userId);
+      dispatch({ type: FETCHED_BADGES, payload: data.badges });
+    } catch {
+      dispatch({ type: FETCH_BADGES_ERROR });
+    }
   };
 }
