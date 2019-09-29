@@ -67,7 +67,7 @@ class App extends Component {
   renderBadgeList() {
     const { badges } = this.props.badges;
     const overrideUlStyle = {
-      paddingLeft: '3%'
+      paddingLeft: "3%"
     };
     if (badges) {
       return (
@@ -80,15 +80,15 @@ class App extends Component {
     }
   }
 
-  renderCurrentBadge(){
+  renderCurrentBadge() {
     const { badges } = this.props.badges;
-    if(badges){
+    if (badges) {
       const foundActiveBadge = badges.find(badge => {
         console.log(badge);
-        return badge.active === true
+        return badge.active === true;
       });
-      if(foundActiveBadge){
-        return <BadgeStatus badge={foundActiveBadge}/>
+      if (foundActiveBadge) {
+        return <BadgeStatus badge={foundActiveBadge} />;
       }
     }
     return null;
