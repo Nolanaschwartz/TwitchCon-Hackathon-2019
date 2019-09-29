@@ -6,9 +6,9 @@ function BadgeListItem(props) {
 
   return (
     <li>
-      <BadgeIcon iconUrl={props.iconUrl} />
-      <p>{props.achievement}</p>
-      <p>Earned: {props.date}</p>
+      <BadgeIcon iconUrl={props.badge.iconUrl} />
+      <p>{props.badge.fullname}</p>
+      <p>Earned: {props.badge.date}</p>
     </li>
   );
 }

@@ -11,7 +11,7 @@ class Badges extends Component {
           Badges
           <ul>
             {Object.values(this.props.badges).map((value, index) => {
-              // return <BadgeListItem />
+              // return <BadgeListItem badge={value}/>
               return <li key={index}>{value.id}</li>;
             })}
           </ul>

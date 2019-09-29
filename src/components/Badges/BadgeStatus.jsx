@@ -3,21 +3,21 @@ import BadgeIcon from "./BadgeIcon";
 
 function BadgeStatus(props) {
   let button =
-    !props.active && props.awarded ? (
+    !props.badge.active && props.badge.awarded ? (
       <button>activate</button>
     ) : (
       <span>active</span>
     );
 
-  if (!props.awarded) {
+  if (!props.badge.awarded) {
     button = null;
   }
 
   return (
     <div>
-      <p>{props.active ? "Active Badge" : "Earning Badge"}</p>
-      <BadgeIcon iconUrl={props.iconUrl} awarded={props.awarded}/>
-      <p>{props.name}</p>
+      <p>{props.badge.active ? "Active Badge" : "Earning Badge"}</p>
+      <BadgeIcon iconUrl={props.badge.iconUrl} awarded={props.badge.awarded}/>
+      <p>{props.badge.name}</p>
       {button}
     </div>
   );

@@ -5,10 +5,10 @@ function BadgeIcon(props) {
   const styling = {
     height: "30px",
     width: "30px",
-    filter: props.awarded ? null : "grayscale(1)"
+    filter: props.badge.awarded ? null : "grayscale(1)"
   };
 
-  return <img src={props.iconUrl} alt={props.iconUrl} style={styling} />;
+  return <img src={props.badge.iconUrl} alt={props.badge.iconUrl} style={styling} />;
 }
 
 export default BadgeIcon;
