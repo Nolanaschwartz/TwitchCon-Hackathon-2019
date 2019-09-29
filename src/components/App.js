@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import TwitchAuthentication from "../util/TwitchAuthentication";
 //import Extension from "./Extension/Extension";
 import { authenticateUser } from "../modules/app";
+import BadgeStatus from "./Badges/BadgeStatus";
 
 class App extends Component {
   constructor(props) {
@@ -60,6 +61,7 @@ class App extends Component {
     if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
+          <BadgeStatus iconUrl={'../../badges/zakum.png'} awarded={true} active={true} name={'zakum'}/>
         </div>
       );
     } else {
