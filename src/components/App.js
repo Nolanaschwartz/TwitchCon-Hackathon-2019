@@ -61,7 +61,7 @@ class App extends Component {
     if (this.props.app.authenticated && this.state.isVisible) {
       return (
         <div className="App">
-          <BadgeStatus iconUrl={'../../badges/zakum.png'} awarded={true} active={true} name={'zakum'}/>
+          <BadgeStatus iconUrl={'https://i.imgur.com/pKixFxj.png'} awarded={true} active={true} name={'zakum'}/>
         </div>
       );
     } else {

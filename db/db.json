@@ -4,6 +4,7 @@
             "badges": [{
                     "id": "FirstZakumClear",
                     "img": "zakum",
+                    "imgurl": "https://i.imgur.com/pKixFxj.png",
                     "awarded": false,
                     "active": true,
                     "eventdate": "2018-07-23",
@@ -14,6 +15,7 @@
                 {
                     "id": "RoyalFlush",
                     "img": "playingcards",
+                    "imgurl":"https://i.imgur.com/KINWBfP.png",
                     "awarded": false,
                     "active": false,
                     "eventdate": "2018-03-02",
@@ -24,6 +26,7 @@
                 {
                     "id": "GodlyDagger",
                     "img": "dagger",
+                    "imgurl":"https://i.imgur.com/9WtMUFM.png",
                     "awarded": true,
                     "active": false,
                     "eventdate": "2018-03-22",
@@ -34,6 +37,7 @@
                 {
                     "id": "BeatMario",
                     "img": "mushroom",
+                    "imgurl":"https://i.imgur.com/0DEUYqV.png",
                     "awarded": true,
                     "active": false,
                     "eventdate": "2018-03-28",
@@ -44,6 +48,7 @@
                 {
                     "id": "BeatEliteFour",
                     "img": "pokeball",
+                    "imgurl": "https://i.imgur.com/II1dSXI.png",
                     "awarded": true,
                     "active": false,
                     "eventdate": "2018-01-03",
@@ -58,6 +63,7 @@
             "badges": [{
                 "id": "FirstZakumClear",
                 "img": "zakum",
+                "imgurl": "https://i.imgur.com/pKixFxj.png",
                 "awarded": false,
                 "active": false,
                 "eventdate": "2018-07-23",
@@ -68,6 +74,7 @@
             {
                 "id": "RoyalFlush",
                 "img": "playingcards",
+                "imgurl":"https://i.imgur.com/KINWBfP.png",
                 "awarded": false,
                 "active": false,
                 "eventdate": "2018-03-02",
@@ -78,6 +85,7 @@
             {
                 "id": "GodlyDagger",
                 "img": "dagger",
+                "imgurl":"https://i.imgur.com/9WtMUFM.png",
                 "awarded": true,
                 "active": true,
                 "eventdate": "2018-03-22",
@@ -88,6 +96,7 @@
             {
                 "id": "BeatMario",
                 "img": "mushroom",
+                "imgurl":"https://i.imgur.com/0DEUYqV.png",
                 "awarded": true,
                 "active": false,
                 "eventdate": "2018-03-28",
@@ -98,6 +107,7 @@
             {
                 "id": "BeatEliteFour",
                 "img": "pokeball",
+                "imgurl": "https://i.imgur.com/II1dSXI.png",
                 "awarded": true,
                 "active": false,
                 "eventdate": "2018-01-03",
@@ -112,6 +122,7 @@
             "badges": [{
                 "id": "FirstZakumClear",
                 "img": "zakum",
+                "imgurl": "https://i.imgur.com/pKixFxj.png",
                 "awarded": false,
                 "active": false,
                 "eventdate": "2018-07-23",
@@ -122,6 +133,7 @@
             {
                 "id": "RoyalFlush",
                 "img": "playingcards",
+                "imgurl":"https://i.imgur.com/KINWBfP.png",
                 "awarded": true,
                 "active": true,
                 "eventdate": "2018-03-02",
@@ -132,6 +144,7 @@
             {
                 "id": "GodlyDagger",
                 "img": "dagger",
+                "imgurl":"https://i.imgur.com/9WtMUFM.png",
                 "awarded": true,
                 "active": false,
                 "eventdate": "2018-03-22",
@@ -142,6 +155,7 @@
             {
                 "id": "BeatMario",
                 "img": "mushroom",
+                "imgurl":"https://i.imgur.com/0DEUYqV.png",
                 "awarded": true,
                 "active": false,
                 "eventdate": "2018-03-28",
@@ -152,6 +166,7 @@
             {
                 "id": "BeatEliteFour",
                 "img": "pokeball",
+                "imgurl": "https://i.imgur.com/II1dSXI.png",
                 "awarded": true,
                 "active": false,
                 "eventdate": "2018-01-03",
@@ -166,6 +181,7 @@
             "badges": [{
                 "id": "FirstZakumClear",
                 "img": "zakum",
+                "imgurl": "https://i.imgur.com/pKixFxj.png",
                 "awarded": false,
                 "active": false,
                 "eventdate": "2018-07-23",
@@ -176,6 +192,7 @@
             {
                 "id": "RoyalFlush",
                 "img": "playingcards",
+                "imgurl":"https://i.imgur.com/KINWBfP.png",
                 "awarded": false,
                 "active": false,
                 "eventdate": "2018-03-02",
@@ -186,6 +203,7 @@
             {
                 "id": "GodlyDagger",
                 "img": "dagger",
+                "imgurl":"https://i.imgur.com/9WtMUFM.png",
                 "awarded": false,
                 "active": false,
                 "eventdate": "2018-03-22",
@@ -196,6 +214,7 @@
             {
                 "id": "BeatMario",
                 "img": "mushroom",
+                "imgurl":"https://i.imgur.com/0DEUYqV.png",
                 "awarded": false,
                 "active": false,
                 "eventdate": "2018-03-28",
@@ -206,6 +225,7 @@
             {
                 "id": "BeatEliteFour",
                 "img": "pokeball",
+                "imgurl": "https://i.imgur.com/II1dSXI.png",
                 "awarded": true,
                 "active": true,
                 "eventdate": "2018-01-03",
