@@ -1,10 +1,11 @@
 {
     "users": [{
             "id": "LithHarbor",
+            "activebadge": "BeatEliteFour",
             "awardedbadges": {
                 "RoyalFlush": true,
-                "BecameEliteFour": true,
-                "GotMarried": true
+                "BeatEliteFour": true,
+                "GodlyDagger": true
             },
             "earnedbadges": {
                 "GodlyDagger": true
@@ -12,6 +13,7 @@
         },
         {
             "id": "MonolithicTV",
+            "activebadge": "RoyalFlush",
             "awardedbadges": {
                 "GodlyDagger": true,
                 "RoyalFlush": true,
@@ -22,12 +24,14 @@
         },
         {
             "id": "XZeta",
+            "activebadge": "FirstZakumClear",
             "awardedbadges": {
                 "FirstZakumClear": true
             }
         },
         {
             "id": "Plutonium",
+            "activebadge": "FirstZakumClear",
             "awardedbadges": {
                 "BeatEliteFour": true,
                 "FirstZakumClear": true
@@ -35,7 +39,7 @@
         }
     ],
     "badges": [{
-            "id": "Level200",
+            "id": "FirstZakumClear",
             "img": "zakum",
             "eventdate": "2018-07-23"
         },
