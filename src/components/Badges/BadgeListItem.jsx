@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import { red } from '@material-ui/core/colors';
+import CardHeader from '@material-ui/core/CardHeader';
 const useStyles = makeStyles({
   card: {
     minWidth: 200,
@@ -17,6 +19,7 @@ const useStyles = makeStyles({
   pos: {
  
   },
+
 });
 // activate button should route to Confirm Menu
 
@@ -29,15 +32,14 @@ function BadgeListItem(props) {
 
 
     <Card className={useStyles.card}>
-    <CardContent>
-      <Typography className={useStyles.title} variant="headline" color="textSecondary" gutterBottom>
-      <BadgeIcon badge={props.badge} />
-      <h4 style={{ color: 'black', fontWeight: "bold" }}>  {props.badge.fullName}</h4>   
-      </Typography>
-      <Typography variant="body2" component="p">
-      Earned: {props.badge.eventDate}
-        </Typography>
-    </CardContent>
+          <CardHeader
+         avatar={
+          <BadgeIcon badge={props.badge} />
+        }
+        title={props.badge.fullName}
+        subheader= {props.badge.eventDate}
+      />
+   
 
   </Card>
    
