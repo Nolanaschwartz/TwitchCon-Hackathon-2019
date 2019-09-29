@@ -10,7 +10,6 @@ import Badges from "./components/Badges/Badges";
 ReactDOM.render(
   <Provider store={store}>
     <App />
-    <Badges />
   </Provider>,
   document.getElementById("root")
 );
