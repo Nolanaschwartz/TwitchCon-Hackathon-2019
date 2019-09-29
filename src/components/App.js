@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import { Typography } from "@material-ui/core";
+
 import TwitchAuthentication from "../util/TwitchAuthentication";
 //import Extension from "./Extension/Extension";
 import { authenticateUser } from "../modules/app";
 import BadgeStatus from "./BadgeInfo/BadgeStatus";
 import VideoPlayer from "./BadgeInfo/VideoPlayer";
+import BadgeListItem from "./Badges/BadgeListItem";
 
 class App extends Component {
   constructor(props) {
@@ -77,6 +80,12 @@ class App extends Component {
         <div className="App">
           {/*<BadgeStatus iconUrl={'https://i.imgur.com/pKixFxj.png'} awarded={true} active={true} name={'zakum'}/>*/}
           <BadgeStatus badge={tempBadge} />
+          <Typography component="h2" variant="overline">
+            Your Badges
+          </Typography>
+          <ul>
+            <BadgeListItem badge={tempBadge} />
+          </ul>
         </div>
       );
     } else {
