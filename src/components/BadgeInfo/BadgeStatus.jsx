@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import CardHeader from '@material-ui/core/CardHeader';
 const useStyles = makeStyles({
   card: {
     minWidth: 200,
@@ -35,11 +36,14 @@ function BadgeStatus(props) {
     <div>
 
       <Card className={useStyles.card}>
-        <CardContent>
-          <Typography component="h1" className={useStyles.title} color="textSecondary" gutterBottom>
-            <h4 style={{ color: 'black', fontWeight: "bold" }}> {props.badge.active ? "Active Badge\n" : "Earning Badge"}</h4>
-          </Typography>
+      <CardHeader
+      
+        title= {props.badge.active ? "Active Badge\n" : "Earning Badge"}
+      
+      />
 
+        <CardContent>
+        
           <center>
             <BadgeIcon badge={props.badge} />
             <p>{props.badge.name}</p>
